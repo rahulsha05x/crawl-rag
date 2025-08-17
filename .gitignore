@@ -1,0 +1,5 @@
+.env
+.venv/
+chroma_store/
+*.db
+*.sqlite
