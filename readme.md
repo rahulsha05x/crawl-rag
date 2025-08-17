@@ -1,13 +1,35 @@
+
 # FastAPI + LangGraph + ChromaDB (RAG)
 
-## Setup
+## Python Environment Setup
 
+It is recommended to use a virtual environment to manage dependencies and avoid conflicts:
+
+### 1. Create a virtual environment
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+```
+
+### 2. Activate the virtual environment
+- **macOS/Linux:**
+  ```bash
+  source .venv/bin/activate
+  ```
+- **Windows:**
+  ```bash
+  .venv\Scripts\activate
+  ```
+
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Environment variables
+Copy the example environment file and set your OpenAI API key:
+```bash
 cp .env.example .env
-# Put your OPENAI_API_KEY in .env or set EMBEDDING_BACKEND=local
+# Edit .env and set OPENAI_API_KEY or set EMBEDDING_BACKEND=local
 ```
 
 ## Startup
